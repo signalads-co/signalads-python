@@ -9,7 +9,7 @@ if sys.version_info < (2, 6):
 setup(
     name="SignalAds",
     py_modules=['signal-ads'],
-    version="0.0.1",
+    version="0.0.2",
     description="Signal Ads Python library",
     author="Iman Naseri",
     author_email="inaseri.20@gmail.com",
@@ -19,6 +19,6 @@ setup(
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
-        "Homepage :: https://github.com/signalads-co/signalads-python",
     ],
+    url="https://github.com/signalads-co/signalads-python"
 )
