@@ -3,7 +3,7 @@ import requests
 
 class SignalAdsApi(object):
     def __init__(self):
-        self.host = 'http://192.168.1.198:8000/api/v1'
+        self.host = 'https://sms.signalads.com/api/v1'
         self.api_key = ''
 
     def set_api_key(self, api_key):
