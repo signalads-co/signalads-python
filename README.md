@@ -6,7 +6,7 @@
 
 ```python
 
-from send import SignalAdsApi
+from signal import SignalAdsApi
 
 signal = SignalAdsApi()
 
@@ -43,7 +43,7 @@ signal.send_single_sms(sender, text, receptor)
 
 ```python
 
-from send import SignalAdsApi
+from signal import SignalAdsApi
 
 signal = SignalAdsApi()
 
@@ -79,7 +79,7 @@ signal.send_multiple_sms(sender, text, receptors)
 
 ```python
 
-from send import SignalAdsApi
+from signal import SignalAdsApi
 
 signal = SignalAdsApi()
 
@@ -114,7 +114,7 @@ signal.send_pair_to_pair_sms(sender, pairs)
 
 ```python
 
-from send import SignalAdsApi
+from signal import SignalAdsApi
 
 signal = SignalAdsApi()
 
@@ -151,7 +151,7 @@ signal.send_sms_with_pattern(sender, pattern_id, pattern_params, receptors)
 
 ```python
 
-from send import SignalAdsApi
+from signal import SignalAdsApi
 
 signal = SignalAdsApi()
 
