@@ -26,7 +26,7 @@ class SignalAdsApi(object):
 
     def send_sms_with_pattern(self, sender, pattern_id, pattern_params, receptors):
         body = {'sender': sender, 'pattern_id': pattern_id, 'pattern_params': pattern_params, 'receptors': receptors}
-        result = requests.post(self.host + '/' + self.api_key + '/messages/send-pattern', body)
+        result = requests.post(self.host + '/' + self.api_key + '/messages/withPattern', body)
         return result.json()
 
     def get_account_credit(self):
