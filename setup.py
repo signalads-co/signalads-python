@@ -7,9 +7,9 @@ if sys.version_info < (2, 6):
     requires.append('simplejson')
 
 setup(
-    name="SignalAds",
+    name="signalads-pyton",
     py_modules=['signal-ads'],
-    version="0.0.5",
+    version="0.0.6",
     description="Signal Ads Python library",
     author="Iman Naseri",
     author_email="inaseri.20@gmail.com",
