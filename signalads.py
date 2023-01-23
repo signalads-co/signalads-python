@@ -11,22 +11,22 @@ class SignalAdsApi(object):
 
     def send_single_sms(self, sender, text, receptor):
         body = {'sender': sender, 'text': text, 'receptor': receptor}
-        result = requests.post(self.host + '/' + self.api_key + '/send', body)
+        result = requests.post(self.host + '/' + self.api_key + '/send', json=body)
         return result.json()
 
     def send_multiple_sms(self, sender, text, receptors):
         body = {'sender': sender, 'text': text, 'receptors': receptors}
-        result = requests.post(self.host + '/' + self.api_key + '/sendGroup', body)
+        result = requests.post(self.host + '/' + self.api_key + '/sendGroup', json=body)
         return result.json()
 
     def send_pair_to_pair_sms(self, sender, pairs):
         body = {'sender': sender, 'message': pairs}
-        result = requests.post(self.host + '/' + self.api_key + '/sendPair', body)
+        result = requests.post(self.host + '/' + self.api_key + '/sendPair', json=body)
         return result.json()
 
     def send_sms_with_pattern(self, sender, pattern_id, pattern_params, receptors):
         body = {'sender': sender, 'pattern_id': pattern_id, 'pattern_params': pattern_params, 'receptor': receptors}
-        result = requests.post(self.host + '/' + self.api_key + '/withPattern', body)
+        result = requests.post(self.host + '/' + self.api_key + '/withPattern', json=body)
         return result.json()
 
     def get_account_credit(self):
